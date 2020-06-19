@@ -1,6 +1,7 @@
 console.log("uwu");
 //Creación de elementos
-var num = 8;
+let bool = false;
+var num = prompt("Ingresa la longitud de los lados");
 var tabla = document.createElement("table");
 var filas = new Array();
 var celdas = new Array();
