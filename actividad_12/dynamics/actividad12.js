@@ -1,4 +1,4 @@
-console.log("Creado por Xochipilli")
+console.log("Xochipilli")
 const lado = 10;
 function verifJuego(cuerpo){
   let arrayVerif = new Array();
