@@ -64,9 +64,9 @@ function crearTorres(){
   let t3 = lectura_cookies("t3");
   
   if (t1 === false || t2 === false || t3 === false){
-    t1 = new String("1,2");
+    t1 = new String("1,2,3,4,5");
     t2 = new String("");
-    t3 = new String("3,4,5");
+    t3 = new String("");
   }
   
   t1 = t1.split(",");
@@ -134,25 +134,35 @@ let ganar = false;
 let torres = crearTorres();
 console.log(leerTiempo())
 let tiempoT = 0;
-do{
-  let fechaIni = crearTiempo();
-  console.log(torres.join("/"))
-  let pos = pideNums(torres);
-  torres = moveDisco(torres, pos[0], pos[1]);
-  console.log("Torre 1: " + torres[0]);
-  console.log("Torre 2: " + torres[1]);
-  console.log("Torre 3: " + torres[2]);
-  let fechaFini =  crearTiempo();
-  tiempoT += fechaFini - fechaIni;
-  if(torres[1].length == 5 || torres[2].length == 5){
-    tiempoT/= 1000;
-    alert("Ganaste\n Tardaste " + tiempoT + " segundos")
-    ganar = true;
+
+setTimeout(function juego() {
+  if(ganar == false){
+    let fechaIni = crearTiempo();
+    console.log(torres.join("/"))
+    let pos = pideNums(torres);
+    torres = moveDisco(torres, pos[0], pos[1]);
+    console.log("Torre 1: " + torres[0]);
+    console.log("Torre 2: " + torres[1]);
+    console.log("Torre 3: " + torres[2]);
+    let fechaFini =  crearTiempo();
+    tiempoT += fechaFini - fechaIni;
+    if(torres[1].length == 5 || torres[2].length == 5){
+      tiempoT/= 1000;
+      alert("Ganaste\n Tardaste " + tiempoT + " segundos")
+      ganar = true;
+    }
+    guardarJuego(torres);
+    guardarTiempo(tiempoT);
+    setTimeout(()=>{
+      juego();
+    }, 1000)
   }
-  guardarJuego(torres);
-  guardarTiempo(tiempoT);
-} while (ganar == false);
-terminarJuego();
+  else{
+    terminarJuego();
+  }
+}, 1000);
+
+
 // //DOM
 // let torrecita1 = document.createElement("div");
 // let torrecita2 = document.createElement("div");
