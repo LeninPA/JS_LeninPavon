@@ -1,8 +1,19 @@
 console.log("Xochipilli");
-console.log(document.cookie);
 //Creación de elementos
+function terminarJuego() {
+  document.cookie = `intento=0; expires=Thu, 01 Jan 1970 00:00:00 UTC;`;
+  document.cookie = `victoria=0; expires=Thu, 01 Jan 1970 00:00:00 UTC;`;
+}
+function envio_nums() {
+  setTimeout(() => {
+    let c_nums_a_pedir = nums_a_pedir.toString();
+    document.cookie = `nums_simon=${c_nums_a_pedir}`;
+    setTimeout(() => {
+      window.location = "./actividad10_1.html";
+    }, 1000);
+  }, v_cookie_aux * 1550);
+}
 function num() {
-  console.log("uwu");
   return Math.round(Math.random() * 99);
 }
 function lectura_cookies(cookie) {
@@ -27,7 +38,7 @@ function lectura_cookies(cookie) {
     return false
   }
 }
-posCookie 
+let vVictoria = lectura_cookies("victoria")
 var v_cookie_aux = 0;
 var valor_intento = new Promise((resolve) => {
   let c = lectura_cookies("intento");
@@ -39,124 +50,109 @@ var valor_intento = new Promise((resolve) => {
   }
   v_cookie_aux = v_cookie;
   resolve(v_cookie);
-  if(v_cookie < 5){
+  if(v_cookie <= 5){
     v_cookie++;
   }
   document.cookie = "intento=" + v_cookie;
 });
 var nums_a_pedir = new Array();
-valor_intento
-.then((v_cookie)=>{
-  let a = num();
-  nums_a_pedir.push(a);
-  console.log(a)
-  let contador = 1;
-  let resultados = new Array(v_cookie, contador);
-  console.log(resultados)
-  return Promise.resolve(resultados);
-})
-.then((resultados)=>{
-  if(resultados[0] != resultados[1]){
-    let a = num();
-    nums_a_pedir.push(a);
-    console.log(a)
-    resultados[1]++;
-  }
-  return Promise.resolve(resultados);
-})
-.then((resultados) => {
-  if (resultados[0] != resultados[1]) {
-    let a = num();
-    nums_a_pedir.push(a);
-    console.log(a)
-    resultados[1]++;
-  }
-  return Promise.resolve(resultados);
-})
-.then((resultados) => {
-  if (resultados[0] != resultados[1]) {
-    let a = num();
-    nums_a_pedir.push(a);
-    console.log(a)
-    resultados[1]++;
-  }
-  return Promise.resolve(resultados);
-})
-.then((resultados) => {
-  if (resultados[0] != resultados[1]) {
-    let a = num();
-    nums_a_pedir.push(a);
-    console.log(a)
-    resultados[1]++;
-  }
-  return Promise.resolve(resultados);
-})
-.then(
-  console.log(nums_a_pedir)
-)
-setTimeout(() => {
-  let a = 1;
-  let numeros = new Promise((resolve)=>{
-    let len = nums_a_pedir.length;
-    for (i = len; i < 5; i++) {
-      nums_a_pedir.push(-1);
-    }
-    console.log(nums_a_pedir)
-    resolve(nums_a_pedir)
-  })
-  numeros
-  .then((nums_a_pedir)=>{
-    setTimeout(() => {
-      console.log(nums_a_pedir[0])
-    }, 1500);
-    return Promise.resolve(nums_a_pedir);
-  })
-  .then((nums_a_pedir) => {
-    if(nums_a_pedir[1]!=-1){
-      setTimeout(() => {
-        console.log(nums_a_pedir[1])
-      }, 1500 * 2);
-    }
-    return Promise.resolve(nums_a_pedir);
-  })
-  .then((nums_a_pedir) => {
-    if (nums_a_pedir[2] != -1) {
-      setTimeout(() => {
-        console.log(nums_a_pedir[2])
-      }, 1500 * 3);
-    }
-    return Promise.resolve(nums_a_pedir);
-  })
-  .then((nums_a_pedir) => {
-    if (nums_a_pedir[3] != -1) {
-      setTimeout(() => {
-        console.log(nums_a_pedir[3])
-      }, 1500 * 4);
-    }
-    return Promise.resolve(nums_a_pedir);
-  })
-  .then((nums_a_pedir) => {
-    if (nums_a_pedir[4] != -1) {
-      setTimeout(() => {
-        console.log(nums_a_pedir[4])
-      }, 1500 * 5);
-    }
-    return Promise.resolve(nums_a_pedir);
-  })
-  .then(
-    console.log("uwu")
-  )
-}, 10);
 
-function envio_nums() {
+if(vVictoria === false || vVictoria == 1){
+  valor_intento
+  .then((v_cookie)=>{
+    let a = num();
+    nums_a_pedir.push(a);
+    let contador = 1;
+    let resultados = new Array(v_cookie, contador);
+    return Promise.resolve(resultados);
+  })
+  .then((resultados)=>{
+    if(resultados[0] != resultados[1]){
+      let a = num();
+      nums_a_pedir.push(a);
+      resultados[1]++;
+    }
+    return Promise.resolve(resultados);
+  })
+  .then((resultados) => {
+    if (resultados[0] != resultados[1]) {
+      let a = num();
+      nums_a_pedir.push(a);
+      resultados[1]++;
+    }
+    return Promise.resolve(resultados);
+  })
+  .then((resultados) => {
+    if (resultados[0] != resultados[1]) {
+      let a = num();
+      nums_a_pedir.push(a);
+      resultados[1]++;
+    }
+    return Promise.resolve(resultados);
+  })
+  .then((resultados) => {
+    if (resultados[0] != resultados[1]) {
+      let a = num();
+      nums_a_pedir.push(a);
+      resultados[1]++;
+    }
+    return Promise.resolve(resultados);
+  })
   setTimeout(() => {
-    console.log(nums_a_pedir);
-    let c_nums_a_pedir = nums_a_pedir.toString();
-    document.cookie = `nums_simon=${c_nums_a_pedir}`;
-    setTimeout(() => {
-      window.location = "./actividad10_1.html";
-    }, 1000);
-  }, v_cookie_aux * 1550);
+    let numeros = new Promise((resolve)=>{
+      let len = nums_a_pedir.length;
+      for (i = len; i < 5; i++) {
+        nums_a_pedir.push(-1);
+      }
+      resolve(nums_a_pedir)
+      console.log("Listo?")
+    })
+    numeros
+    .then((nums_a_pedir)=>{
+      setTimeout(() => {
+        console.log(nums_a_pedir[0])
+      }, 1500);
+      return Promise.resolve(nums_a_pedir);
+    })
+    .then((nums_a_pedir) => {
+      if(nums_a_pedir[1]!=-1){
+        setTimeout(() => {
+          console.log(nums_a_pedir[1])
+        }, 1500 * 2);
+      }
+      return Promise.resolve(nums_a_pedir);
+    })
+    .then((nums_a_pedir) => {
+      if (nums_a_pedir[2] != -1) {
+        setTimeout(() => {
+          console.log(nums_a_pedir[2])
+        }, 1500 * 3);
+      }
+      return Promise.resolve(nums_a_pedir);
+    })
+    .then((nums_a_pedir) => {
+      if (nums_a_pedir[3] != -1) {
+        setTimeout(() => {
+          console.log(nums_a_pedir[3])
+        }, 1500 * 4);
+      }
+      return Promise.resolve(nums_a_pedir);
+    })
+    .then((nums_a_pedir) => {
+      if (nums_a_pedir[4] != -1) {
+        setTimeout(() => {
+          console.log(nums_a_pedir[4])
+        }, 1500 * 5);
+      }
+      return Promise.resolve(nums_a_pedir);
+    })
+  }, 10);
+  
+  envio_nums();
+} else if (vVictoria == 0) {
+  console.log("Simón está triste, te has equivocado :c");
+  terminarJuego();
+} else {
+  console.log("Ganaste uwu");
+  terminarJuego();
 }
-
-envio_nums();

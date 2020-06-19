@@ -39,15 +39,12 @@ for (valor of valores) {
 }
 if (romper === true) {
   document.cookie = "victoria=0";
-  console.log("victoria=0");
 }
 if (intento < 6 && !romper) {
   document.cookie = "victoria=1";
-  console.log("victoria=1");
 }
 else if (!romper)
 {
   document.cookie = "victoria=2";
-  console.log("victoria=2");
 }
 window.location = "./actividad9.html"

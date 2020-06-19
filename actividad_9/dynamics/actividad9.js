@@ -6,7 +6,7 @@ function num() {
 function terminarJuego() {
   document.cookie = `intento=0; expires=Thu, 01 Jan 1970 00:00:00 UTC;`;
   document.cookie = `victoria=0; expires=Thu, 01 Jan 1970 00:00:00 UTC;`;
-};
+}
 function lectura_cookies(cookie) {
   let c = document.cookie
   let cookies = c.split(";");

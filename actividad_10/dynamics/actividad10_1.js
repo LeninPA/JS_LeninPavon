@@ -1,5 +1,4 @@
 console.log("Xochipilli");
-console.log(document.cookie);
 function lectura_cookies (cookie) {
   let c = document.cookie
   let cookies = c.split(";");
@@ -24,31 +23,27 @@ function lectura_cookies (cookie) {
 }
 let intento = lectura_cookies("intento");
 let nums_simon = new String(lectura_cookies("nums_simon"));
-console.log(nums_simon)
 let valores = nums_simon.split(",");
 let termino = 1;
-console.log(valores);
 for (valor of valores) {
-  var romper = false;
-  console.log(valor);
-  let num_usr = prompt("Ingrese el término " + termino);
-  console.log(num_usr)
-  if(num_usr != valor){
-    romper = true;
+  if (valor != -1){
+    var romper = false;
+    let num_usr = prompt("Ingrese el término " + termino);
+    console.log(num_usr)
+    if(num_usr != valor){
+      romper = true;
+    }
+    termino++;
   }
-  termino++;
 }
 if (romper === true) {
   document.cookie = "victoria=0";
-  console.log("victoria=0");
 }
-if (intento < 5 && !romper) {
+if (intento < 6 && !romper) {
   document.cookie = "victoria=1";
-  console.log("victoria=1");
 }
 else if (!romper)
 {
   document.cookie = "victoria=2";
-  console.log("victoria=2");
 }
 window.location = "./actividad10.html"
