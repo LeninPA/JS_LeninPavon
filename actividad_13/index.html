@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos</title>
+  <link rel="stylesheet" href="./statics/styles/index.css">
+</head>
+
+<body>
+  <div class="form-container">
+    <h2>Buscar productos:</h2>
+    <form id="myForm">
+      <div class="field">
+        <label for="clave">Palabra clave:</label>
+        <input type="text" name="clave" id="clave">
+      </div>
+      <input type="checkbox" name="Limpieza" id="f1" value="Limpieza" checked>Limpieza<br>
+      <input type="checkbox" name="Condimentos" id="f2" value="Condimentos" checked>Condimentos<br>
+      <input type="checkbox" name="Preparados" id="f3" value="Alimentos preparados" checked>Alimentos preparados<br>
+      <input type="checkbox" name="Empaquetados" id="f4" value="Alimentos empaquetados" checked>Alimentos empaquetados<br>
+      <input type="checkbox" name="Enlatados" id="f5" value="Alimentos enlatados" checked>Alimentos enlatados<br>
+      <div>
+        <input type="submit" value="Buscar">
+      </div>
+    </form>
+  </div>
+  <br><br><br><br>
+  <div class="table-container">
+    <table>
+      <thead>
+        <th>Clave:</th>
+        <th>Nombre:</th>
+        <th>Disponibilidad:</th>
+        <th>Tipo:</th>
+      </thead>
+      <tbody id="table-content">
+      </tbody>
+    </table>
+  </div>
+</body>
+<script src="js/index.js"></script>
+
+</html>

@@ -1,0 +1,878 @@
+@font-face{
+  font-family: 'oxygen';
+  src: url("../lib/fonts/Oxygen/Oxygen-Light.ttf");
+}
+@font-face{
+  font-family: 'domine';
+  src: url("../lib/fonts/Domine/Domine-Regular.ttf");
+}
+@font-face{
+  font-family: 'rubik';
+  src: url("../lib/fonts/Rubik/Rubik-LightItalic.ttf");
+}
+@keyframes t1{
+  0%{
+    background: url("../statics/img/t1.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 0px 154px, 94px 154px;
+  }
+  50%{
+    background: url("../statics/img/t1.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 47px 154px, 47px 154px;
+  }
+  100%{
+    background: url("../statics/img/t1.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 94px 154px, 0px 154px;
+  }
+}
+@keyframes t2{
+  0%{
+    background: url("../statics/img/t2.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 0px 154px, 94px 154px;
+  }
+  50%{
+    background: url("../statics/img/t2.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 47px 154px, 47px 154px;
+  }
+  100%{
+    background: url("../statics/img/t2.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 94px 154px, 0px 154px;
+  }
+}
+@keyframes t3{
+  0%{
+    background: url("../statics/img/t3.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 0px 154px, 94px 154px;
+  }
+  50%{
+    background: url("../statics/img/t3.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 47px 154px, 47px 154px;
+  }
+  100%{
+    background: url("../statics/img/t3.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 94px 154px, 0px 154px;
+  }
+}
+@keyframes t4{
+  0%{
+    background: url("../statics/img/t4.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 0px 154px, 94px 154px;
+  }
+  50%{
+    background: url("../statics/img/t4.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 47px 154px, 47px 154px;
+  }
+  100%{
+    background: url("../statics/img/t4.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 94px 154px, 0px 154px;
+  }
+}
+@keyframes t5{
+  0%{
+    background: url("../statics/img/t5.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 0px 154px, 94px 154px;
+  }
+  50%{
+    background: url("../statics/img/t5.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 47px 154px, 47px 154px;
+  }
+  100%{
+    background: url("../statics/img/t5.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 94px 154px, 0px 154px;
+  }
+}
+@keyframes t6{
+  0%{
+    background: url("../statics/img/t6.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 0px 154px, 94px 154px;
+  }
+  50%{
+    background: url("../statics/img/t6.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 47px 154px, 47px 154px;
+  }
+  100%{
+    background: url("../statics/img/t6.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 94px 154px, 0px 154px;
+  }
+}
+@keyframes t7{
+  0%{
+    background: url("../statics/img/t7.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 0px 154px, 94px 154px;
+  }
+  50%{
+    background: url("../statics/img/t7.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 47px 154px, 47px 154px;
+  }
+  100%{
+    background: url("../statics/img/t7.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 94px 154px, 0px 154px;
+  }
+}
+@keyframes t8{
+  0%{
+    background: url("../statics/img/t8.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 0px 154px, 94px 154px;
+  }
+  50%{
+    background: url("../statics/img/t8.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 47px 154px, 47px 154px;
+  }
+  100%{
+    background: url("../statics/img/t8.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 94px 154px, 0px 154px;
+  }
+}
+@keyframes t9{
+  0%{
+    background: url("../statics/img/t9.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 0px 154px, 94px 154px;
+  }
+  50%{
+    background: url("../statics/img/t9.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 47px 154px, 47px 154px;
+  }
+  100%{
+    background: url("../statics/img/t9.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 94px 154px, 0px 154px;
+  }
+}
+@keyframes t10{
+  0%{
+    background: url("../statics/img/t10.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 0px 154px, 94px 154px;
+  }
+  50%{
+    background: url("../statics/img/t10.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 47px 154px, 47px 154px;
+  }
+  100%{
+    background: url("../statics/img/t10.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 94px 154px, 0px 154px;
+  }
+}
+@keyframes t11{
+  0%{
+    background: url("../statics/img/t11.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 0px 154px, 94px 154px;
+  }
+  50%{
+    background: url("../statics/img/t11.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 47px 154px, 47px 154px;
+  }
+  100%{
+    background: url("../statics/img/t11.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 94px 154px, 0px 154px;
+  }
+}
+@keyframes t12{
+  0%{
+    background: url("../statics/img/t12.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 0px 154px, 94px 154px;
+  }
+  50%{
+    background: url("../statics/img/t12.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 47px 154px, 47px 154px;
+  }
+  100%{
+    background: url("../statics/img/t12.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 94px 154px, 0px 154px;
+  }
+}
+@keyframes t13{
+  0%{
+    background: url("../statics/img/t13.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 0px 154px, 94px 154px;
+  }
+  50%{
+    background: url("../statics/img/t13.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 47px 154px, 47px 154px;
+  }
+  100%{
+    background: url("../statics/img/t13.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 94px 154px, 0px 154px;
+  }
+}
+@keyframes t14{
+  0%{
+    background: url("../statics/img/t14.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 0px 154px, 94px 154px;
+  }
+  50%{
+    background: url("../statics/img/t14.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 47px 154px, 47px 154px;
+  }
+  100%{
+    background: url("../statics/img/t14.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 94px 154px, 0px 154px;
+  }
+}
+@keyframes t15{
+  0%{
+    background: url("../statics/img/t15.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 0px 154px, 94px 154px;
+  }
+  50%{
+    background: url("../statics/img/t15.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 47px 154px, 47px 154px;
+  }
+  100%{
+    background: url("../statics/img/t15.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 94px 154px, 0px 154px;
+  }
+}
+@keyframes t16{
+  0%{
+    background: url("../statics/img/t16.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 0px 154px, 94px 154px;
+  }
+  50%{
+    background: url("../statics/img/t16.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 47px 154px, 47px 154px;
+  }
+  100%{
+    background: url("../statics/img/t16.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 94px 154px, 0px 154px;
+  }
+}
+@keyframes t17{
+  0%{
+    background: url("../statics/img/t17.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 0px 154px, 94px 154px;
+  }
+  50%{
+    background: url("../statics/img/t17.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 47px 154px, 47px 154px;
+  }
+  100%{
+    background: url("../statics/img/t17.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 94px 154px, 0px 154px;
+  }
+}
+@keyframes t18{
+  0%{
+    background: url("../statics/img/t18.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 0px 154px, 94px 154px;
+  }
+  50%{
+    background: url("../statics/img/t18.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 47px 154px, 47px 154px;
+  }
+  100%{
+    background: url("../statics/img/t18.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 94px 154px, 0px 154px;
+  }
+}
+@keyframes t19{
+  0%{
+    background: url("../statics/img/t19.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 0px 154px, 94px 154px;
+  }
+  50%{
+    background: url("../statics/img/t19.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 47px 154px, 47px 154px;
+  }
+  100%{
+    background: url("../statics/img/t19.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 94px 154px, 0px 154px;
+  }
+}
+@keyframes t20{
+  0%{
+    background: url("../statics/img/t20.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 0px 154px, 94px 154px;
+  }
+  50%{
+    background: url("../statics/img/t20.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 47px 154px, 47px 154px;
+  }
+  100%{
+    background: url("../statics/img/t20.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 94px 154px, 0px 154px;
+  }
+}
+@keyframes t21{
+  0%{
+    background: url("../statics/img/t21.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 0px 154px, 94px 154px;
+  }
+  50%{
+    background: url("../statics/img/t21.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 47px 154px, 47px 154px;
+  }
+  100%{
+    background: url("../statics/img/t21.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 94px 154px, 0px 154px;
+  }
+}
+@keyframes t22{
+  0%{
+    background: url("../statics/img/t22.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 0px 154px, 94px 154px;
+  }
+  50%{
+    background: url("../statics/img/t22.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 47px 154px, 47px 154px;
+  }
+  100%{
+    background: url("../statics/img/t22.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 94px 154px, 0px 154px;
+  }
+}
+@keyframes t23{
+  0%{
+    background: url("../statics/img/t23.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 0px 154px, 94px 154px;
+  }
+  50%{
+    background: url("../statics/img/t23.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 47px 154px, 47px 154px;
+  }
+  100%{
+    background: url("../statics/img/t23.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 94px 154px, 0px 154px;
+  }
+}
+@keyframes t24{
+  0%{
+    background: url("../statics/img/t24.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 0px 154px, 94px 154px;
+  }
+  50%{
+    background: url("../statics/img/t24.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 47px 154px, 47px 154px;
+  }
+  100%{
+    background: url("../statics/img/t24.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 94px 154px, 0px 154px;
+  }
+}
+@keyframes t25{
+  0%{
+    background: url("../statics/img/t25.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 0px 154px, 94px 154px;
+  }
+  50%{
+    background: url("../statics/img/t25.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 47px 154px, 47px 154px;
+  }
+  100%{
+    background: url("../statics/img/t25.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 94px 154px, 0px 154px;
+  }
+}
+@keyframes t26{
+  0%{
+    background: url("../statics/img/t26.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 0px 154px, 94px 154px;
+  }
+  50%{
+    background: url("../statics/img/t26.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 47px 154px, 47px 154px;
+  }
+  100%{
+    background: url("../statics/img/t26.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 94px 154px, 0px 154px;
+  }
+}
+@keyframes t27{
+  0%{
+    background: url("../statics/img/t27.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 0px 154px, 94px 154px;
+  }
+  50%{
+    background: url("../statics/img/t27.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 47px 154px, 47px 154px;
+  }
+  100%{
+    background: url("../statics/img/t27.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 94px 154px, 0px 154px;
+  }
+}
+@keyframes t28{
+  0%{
+    background: url("../statics/img/t28.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 0px 154px, 94px 154px;
+  }
+  50%{
+    background: url("../statics/img/t28.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 47px 154px, 47px 154px;
+  }
+  100%{
+    background: url("../statics/img/t28.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 94px 154px, 0px 154px;
+  }
+}
+@keyframes t29{
+  0%{
+    background: url("../statics/img/t29.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 0px 154px, 94px 154px;
+  }
+  50%{
+    background: url("../statics/img/t29.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 47px 154px, 47px 154px;
+  }
+  100%{
+    background: url("../statics/img/t29.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 94px 154px, 0px 154px;
+  }
+}
+@keyframes t0{
+  0%{
+    background: url("../statics/img/t0.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 0px 154px, 94px 154px;
+  }
+  50%{
+    background: url("../statics/img/t0.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 47px 154px, 47px 154px;
+  }
+  100%{
+    background: url("../statics/img/t0.png") left, url("../statics/img/uwu.png") right;
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: 94px 154px, 0px 154px;
+  }
+}
+:root{
+  --tablero: #57888a;
+  background-color: #bb80ff;
+  font-family: 'oxygen';
+}
+body{
+  text-align: center;
+}
+nav{
+  text-align: center;
+  background-color: #7320d1;
+  color: #d1d5da;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 5vh;
+  min-height: 26px;
+}
+@media all and (max-width: 590px){
+  nav{
+    padding: 10px;
+    flex: 4 0px;
+    text-align: center;
+    height: fit-content;
+  }
+  #restantes{
+    order: 1;
+  }
+  #vidas{
+    order: 2;
+  }
+  #encontrados{
+    order: 3;
+  }
+  #reiniciar{
+    order: 4;
+  }
+}
+.tarjeta{
+  background-image: url("../statics/img/uwu.png");
+  background-size: 94px 154px;
+  background-repeat: no-repeat;
+  background-color: blueviolet;
+  width: 90px;
+  height: 150px;
+  border: 2px solid black;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.tarjeta:hover{
+  box-shadow: 1px 1px 1px 1px;
+}
+.t1{
+  background-image: url("../statics/img/t1.png");
+  background-repeat: no-repeat;
+  animation: t1 0.4s ease-in-out;
+  background-size: 94px 154px;
+}
+.t2{
+  background-image: url("../statics/img/t2.png");
+  background-repeat: no-repeat;
+  animation: t2 0.4s ease-in-out;
+  background-size: 94px 154px;}
+.t3{
+  background-image: url("../statics/img/t3.png");
+  background-repeat: no-repeat;
+  animation: t3 0.4s ease-in-out;
+  background-size: 94px 154px;}
+.t4{
+  background-image: url("../statics/img/t4.png");
+  background-repeat: no-repeat;
+  animation: t4 0.4s ease-in-out;
+  background-size: 94px 154px;}
+.t5{
+  background-image: url("../statics/img/t5.png");
+  background-repeat: no-repeat;
+  animation: t5 0.4s ease-in-out;
+  background-size: 94px 154px;}
+.t6{
+  background-image: url("../statics/img/t6.png");
+  background-repeat: no-repeat;
+  animation: t6 0.4s ease-in-out;
+  background-size: 94px 154px;}
+.t7{
+  background-image: url("../statics/img/t7.png");
+  background-repeat: no-repeat;
+  animation: t7 0.4s ease-in-out;
+  background-size: 94px 154px;}
+.t8{
+  background-image: url("../statics/img/t8.png");
+  background-repeat: no-repeat;
+  animation: t8 0.4s ease-in-out;
+  background-size: 94px 154px;}
+.t9{
+  background-image: url("../statics/img/t9.png");
+  background-repeat: no-repeat;
+  animation: t9 0.4s ease-in-out;
+  background-size: 94px 154px;}
+.t10{
+  background-image: url("../statics/img/t10.png");
+  background-repeat: no-repeat;
+  animation: t10 0.4s ease-in-out;
+  background-size: 94px 154px;}
+.t11{
+  background-image: url("../statics/img/t11.png");
+  background-repeat: no-repeat;
+  animation: t11 0.4s ease-in-out;
+  background-size: 94px 154px;}
+.t12{
+  background-image: url("../statics/img/t12.png");
+  background-repeat: no-repeat;
+  animation: t12 0.4s ease-in-out;
+  background-size: 94px 154px;}
+.t13{
+  background-image: url("../statics/img/t13.png");
+  background-repeat: no-repeat;
+  animation: t13 0.4s ease-in-out;
+  background-size: 94px 154px;}
+.t14{
+  background-image: url("../statics/img/t14.png");
+  background-repeat: no-repeat;
+  animation: t14 0.4s ease-in-out;
+  background-size: 94px 154px;}
+.t15{
+  background-image: url("../statics/img/t15.png");
+  background-repeat: no-repeat;
+  animation: t15 0.4s ease-in-out;
+  background-size: 94px 154px;}
+.t16{
+  background-image: url("../statics/img/t16.png");
+  background-repeat: no-repeat;
+  animation: t16 0.4s ease-in-out;
+  background-size: 94px 154px;}
+.t17{
+  background-image: url("../statics/img/t17.png");
+  background-repeat: no-repeat;
+  animation: t17 0.4s ease-in-out;
+  background-size: 94px 154px;}
+.t18{
+  background-image: url("../statics/img/t18.png");
+  background-repeat: no-repeat;
+  animation: t18 0.4s ease-in-out;
+  background-size: 94px 154px;}
+.t19{
+  background-image: url("../statics/img/t19.png");
+  background-repeat: no-repeat;
+  animation: t19 0.4s ease-in-out;
+  background-size: 94px 154px;}
+.t20{
+  background-image: url("../statics/img/t20.png");
+  background-repeat: no-repeat;
+  animation: t20 0.4s ease-in-out;
+  background-size: 94px 154px;}
+.t21{
+  background-image: url("../statics/img/t21.png");
+  background-repeat: no-repeat;
+  animation: t21 0.4s ease-in-out;
+  background-size: 94px 154px;}
+.t22{
+  background-image: url("../statics/img/t22.png");
+  background-repeat: no-repeat;
+  animation: t22 0.4s ease-in-out;
+  background-size: 94px 154px;}
+.t23{
+  background-image: url("../statics/img/t23.png");
+  background-repeat: no-repeat;
+  animation: t23 0.4s ease-in-out;
+  background-size: 94px 154px;}
+.t24{
+  background-image: url("../statics/img/t24.png");
+  background-repeat: no-repeat;
+  animation: t24 0.4s ease-in-out;
+  background-size: 94px 154px;}
+.t25{
+  background-image: url("../statics/img/t25.png");
+  background-repeat: no-repeat;
+  animation: t25 0.4s ease-in-out;
+  background-size: 94px 154px;}
+.t26{
+  background-image: url("../statics/img/t26.png");
+  background-repeat: no-repeat;
+  animation: t26 0.4s ease-in-out;
+  background-size: 94px 154px;}
+.t27{
+  background-image: url("../statics/img/t27.png");
+  background-repeat: no-repeat;
+  animation: t27 0.4s ease-in-out;
+  background-size: 94px 154px;}
+.t28{
+  background-image: url("../statics/img/t28.png");
+  background-repeat: no-repeat;
+  animation: t28 0.4s ease-in-out;
+  background-size: 94px 154px;}
+.t29{
+  background-image: url("../statics/img/t29.png");
+  background-repeat: no-repeat;
+  animation: t29 0.4s ease-in-out;
+  background-size: 94px 154px;}
+.t0{
+  background-image: url("../statics/img/t0.png");
+  background-repeat: no-repeat;
+  animation: t0 0.4s ease-in-out;
+  background-size: 94px 154px;}
+.volteada{
+  background-color: var(--tablero);
+  border: 2px solid var(--tablero);
+}
+.volteada:hover{
+  box-shadow: 0px 0px 0px 0px;
+}
+/* #encontrados{
+  color: #2f2042;
+  background-color: #f39417;
+  height: 3ex;
+} */
+#reiniciar{
+  background-color: #FFB19A;
+  color: #4f188f;
+  padding: 3px;
+  margin-right: 1vw;
+  border-radius: 1em 0;
+  box-shadow: 3px 3px 3px black;
+  position: relative;
+  top: auto;
+  font-family: 'rubik';
+  transition: background-color 0.4s linear,
+              color 0.4s linear;
+}
+#reiniciar:hover{
+  background-color: #74321e;
+  color: #e0c6fd;
+}
+#reiniciar:active{
+  background-color: #74321e;
+  color: #e0c6fd;
+  padding: 3px;
+  margin-right: 1vw;
+  border-radius: 1em 0;
+  box-shadow: none;
+  position: relative;
+  top: 3px;
+}
+#tablero{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  background-color: var(--tablero);
+}
+#titulo{
+  margin-left: 1vw;
+  color: #7fb2ff;
+  font-family: 'domine';
+  font-size: 3ex;
+}
+
+
+

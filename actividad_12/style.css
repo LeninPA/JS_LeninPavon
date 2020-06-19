@@ -1,0 +1,50 @@
+body{
+  text-align: center;
+}
+.tablero{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color:rgb(116, 202, 31);
+  width: 500px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.serpiente{
+  background-color:blueviolet;
+  width: 50px;
+  height: 50px;
+}
+.fruta{
+  background-color:red;
+  width: 50px;
+  height: 50px;
+}
+.celda{
+  /*display: flex;*/
+  background-color:chartreuse;
+  width: 50px;
+  height: 50px;
+}
+.controles{
+  text-align: center;
+  display:flex;
+  width: 80px;
+  height: 80px;
+  flex-direction:column;
+  background-color:aquamarine;
+  flex-wrap: wrap;
+}
+.uno{
+  align-self: flex-start;
+}
+#controlador{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 50%;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}

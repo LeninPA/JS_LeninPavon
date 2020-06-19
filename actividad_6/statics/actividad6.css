@@ -1,0 +1,17 @@
+p {
+  font-weight: bold;
+}
+a {
+  color: #0f00ad;
+  text-decoration: underline;
+}
+.italian{
+  font-style: italic;
+}
+.red{
+  color: #cd0012;
+}
+.grey{
+  background-color: #d2cdcd;
+  border: 5px dashed black
+}
