@@ -1,5 +1,7 @@
-console.log("uwu");
-console.log(document.cookie);
+console.log("Xochipilli");
+function terminarJuego() {
+  document.cookie = `intento=0; expires=Thu, 01 Jan 1970 00:00:00 UTC;`;
+};
 function lectura_cookies (cookie) {
   let c = document.cookie
   let cookies = c.split(";");
@@ -24,13 +26,10 @@ function lectura_cookies (cookie) {
 }
 let intento = lectura_cookies("intento");
 let nums_simon = new String(lectura_cookies("nums_simon"));
-console.log(nums_simon)
 let valores = nums_simon.split(",");
 let termino = 1;
-console.log(valores);
 for (valor of valores) {
   var romper = false;
-  console.log(valor);
   let num_usr = prompt("Ingrese el término " + termino);
   console.log(num_usr)
   if(num_usr != valor){
