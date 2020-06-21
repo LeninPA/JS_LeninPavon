@@ -1,4 +1,6 @@
-let contador = 1;
+/**Este programa genera una gráfica a partir de un formulario */
+let contador = 0;
+// Se agregan nuevos valores
 function agregar(){
   contador++;
 
@@ -36,6 +38,7 @@ function agregar(){
   table.append(fila)
 
 }
+// Se eliminan los valores
 function elim(){
   if (contador > 0){
     let filaElim = $("#fila" + contador);
@@ -43,30 +46,43 @@ function elim(){
     contador--;
   }
 }
-
-
+// Se realiza la gráfica
 function graficar(){
-  let aux1 = contador;
-
+  // Se le asigan título
   let titulo = $("#titulo").val();
   if(titulo == ""){
     titulo = "Gráfica"
   }
+  // Se crean los valores
+  let titulos = new Array();
+  let colores = new Array();
+  let data = new Array();
+  for (let i = 0; i <= contador; i++){
+    titulos.push($("#titulo" + i).val());
+    console.log(titulos)
+  }
+  for (let i = 0; i <= contador; i++) {
+    colores.push($("#color" + i).val());
+    console.log(colores)
+  }
+  for (let i = 0; i <= contador; i++) {
+    data.push($("#valor" + i).val());
+    console.log(data)
+  }
+  // Se dibuja la gráfica
   let ctx = $("#graf")[0].getContext('2d');
   let graf = new Chart(ctx, {
     type: $("#tipo").val(),
     data: {
-      labels: [
-        'Uwu', 'Awa', 'Ewe'
-      ],
+      labels: titulos,
       datasets: [{
-        backgroundColor: ["#FFFFFF", "#FFF000", "#FFF000"],
-        data: [69230, 62300, 35550]
+        backgroundColor: colores,
+        data: data
       }],
       options: {
         title: {
           display: true,
-          text: "'" + titulo + "'"
+          text: titulo
         }
       }
     }
