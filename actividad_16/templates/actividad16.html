@@ -4,12 +4,26 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Snake</title>
+	<title>Act 16</title>
 	<link href="../statics/actividad16.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
 	<canvas id="canvas" width="500" height="500" style="border:1px dashed #000000;"></canvas>
+	<h1>Actividad 16</h1>
+	<form action="" method="post">
+		<p>Selecciona la figura</p>
+		<select name="figura" id="selectFig">
+			<option value="circulo">Círculo</option>
+			<option value="rect">Rectángulo</option>
+			<option value="mickey">Mickey</option>
+		</select> <br>
+		<p>Selecciona el color de relleno</p>
+		<input type="color" name="relleno" id="relleno" value="#FFFFFF">
+		<p>Selecciona el color de borde</p>
+		<input type="color" name="borde" id="borde"><br><br>
+		<input type="submit" value="¡Dibujar!">
+	</form>
 	<script src="../dynamics/actividad16.js">
 	</script>
 </body>
