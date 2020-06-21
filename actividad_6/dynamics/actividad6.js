@@ -1,4 +1,5 @@
-console.log("uwu");
+console.log("Xochipilli");
+/**Este programa replica un maquetado en HTML con DOM */
 //Creación de elementos
 var bigContainer = document.createElement("div");
 var header = document.createElement("h1");
