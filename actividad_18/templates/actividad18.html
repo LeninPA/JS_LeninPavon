@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../statics/actividad18.css">
+  <title>Actividad 18</title>
+</head>
+<body>
+  <canvas id="graf"></canvas>
+  <h3>Ingresa el título</h3>
+  <input type="text" name="titulo" id="titulo">
+  <h3>Escoge el tipo</h3>
+  <select name="tipo" id="tipo">
+    <option value="pie">Pay</option>
+    <option value="doughnut">Dona</option>
+    <option value="polarArea">Área Polar</option>
+  </select>
+  <br><br>
+  <button id="graficar" onclick="graficar()">Graficar</button>
+  <button id="agregar" onclick="agregar()">Agregar dato</button>
+  <button id="agregar" onclick="elim()">Eliminar dato</button>
+  <br>
+  <table id="datos">
+    <tr>
+      <td>
+        <input type="text" name="titulo" id="titulo0">
+      </td>
+      <td>
+        <input type="number" name="valor" id="valor0">
+      </td>
+      <td>
+        <input type="color" name="color" id="color0">
+      </td>
+    </tr>
+  </table>
+  <script src="../lib/jquery-3.5.1.min.js"></script>
+  <script src="../lib/Chart.min.js"></script>
+  <script src="../dynamics/actividad18.js"></script>
+</body>
+</html>
