@@ -1,16 +1,19 @@
 console.log("Xochipilli");
-
+/**Este programa es una representación lógica del juego torres de Hanoi.
+ * Recibe los datos a través de prompts y guarda el progreso en cookies
+ */
+// Elimina las cookies
 function terminarJuego(){
   document.cookie = `t1=0; expires=Thu, 01 Jan 1970 00:00:00 UTC;`;
   document.cookie = `t2=0; expires=Thu, 01 Jan 1970 00:00:00 UTC;`;
   document.cookie = `t3=0; expires=Thu, 01 Jan 1970 00:00:00 UTC;`;
   document.cookie = `tiempo=0; expires=Thu, 01 Jan 1970 00:00:00 UTC;`;
 };
-
+// Guarda el tiempo que se ha llevado desde el comienzo de la partida
 function guardarTiempo(tiempo){
   document.cookie = "tiempo=" + tiempo;
 }
-
+// Si existe una cookie de tiempo, devuelve su valor, de otro modo devuelve 0
 function leerTiempo(){
   let t = lectura_cookies("tiempo");
   if (t != false) {
@@ -20,7 +23,7 @@ function leerTiempo(){
     return 0
   }
 }
-
+// Guarda la posición actual del tablero
 function guardarJuego(tablero){
   let t1 = tablero[0].join();
   let t2 = tablero[1].join();
@@ -29,13 +32,13 @@ function guardarJuego(tablero){
   document.cookie = "t2=" + t2;
   document.cookie = "t3=" + t3;
 }
-
+// Obtiene el tiempo actual
 function crearTiempo() {
   let d = new Date();
   d.getTime();
   return d
 }
-
+// Revibe el nombre de una cookie y devuelve su valor
 function lectura_cookies(cookie) {
   let c = document.cookie
   let cookies = c.split(";");
@@ -58,17 +61,19 @@ function lectura_cookies(cookie) {
     return false
   }
 }
+// Crea un nuevo juego de torres de Hanoi
 function crearTorres(){
+  // Busca valores anteriores del tablero
   let t1 = lectura_cookies("t1");
   let t2 = lectura_cookies("t2");
   let t3 = lectura_cookies("t3");
-  
+  // En caso de que no haya crea un nuevo tablero
   if (t1 === false || t2 === false || t3 === false){
     t1 = new String("1,2,3,4,5");
     t2 = new String("");
     t3 = new String("");
   }
-  
+  // Convierte las cadenas de texto a arreglo
   t1 = t1.split(",");
   t2 = t2.split(",");
   t3 = t3.split(",");
@@ -76,6 +81,9 @@ function crearTorres(){
   let torres = new Array(t1, t2, t3);
   return torres;
 }
+/** Pide los números al usuario y valida hasta que los números ingresados generen
+ * un movimiento inválido por tamaño de discos o un movimiento válido.
+*/
 function pideNums(torres){
   let tor_igual = true;
   do {
@@ -90,7 +98,7 @@ function pideNums(torres){
         a = -1;
       }
       else if ((torres[a - 1].length == 1 && torres[a - 1][0] == "")||torres[a - 1].length == 0){
-        alert("La torre inicial seleccionada está vacía \n Ingrese una torre válida")
+        alert("La torre inicial seleccionada está vacía \nIngrese una torre válida")
         a = -1;
       }
     }
@@ -102,7 +110,7 @@ function pideNums(torres){
       }
     }
     if(a == b){
-      alert("La torre incial y la torre final no pueden tener el mismo valor")
+      alert("La torre inicial y la torre final no pueden tener el mismo valor")
     }
     else{
       tor_igual = false
@@ -113,6 +121,7 @@ function pideNums(torres){
   let pos = new Array(a, b);
   return pos
 }
+// Realiza el movimiento entre los arreglos
 function moveDisco (torres, tInicio, tFinal){
   let disc = torres[tInicio].shift();
   torres[tFinal].forEach((element, index) => {
@@ -134,11 +143,10 @@ let ganar = false;
 let torres = crearTorres();
 console.log(leerTiempo())
 let tiempoT = 0;
-
+// Juego
 setTimeout(function juego() {
   if(ganar == false){
     let fechaIni = crearTiempo();
-    console.log(torres.join("/"))
     let pos = pideNums(torres);
     torres = moveDisco(torres, pos[0], pos[1]);
     console.log("Torre 1: " + torres[0]);
@@ -161,36 +169,3 @@ setTimeout(function juego() {
     terminarJuego();
   }
 }, 1000);
-
-
-// //DOM
-// let torrecita1 = document.createElement("div");
-// let torrecita2 = document.createElement("div");
-// let torrecita3 = document.createElement("div");
-
-// let palito1 = document.createElement("div");
-// let palito2 = document.createElement("div");
-// let palito3 = document.createElement("div");
-
-// let body = document.getElementsByTagName("body");
-
-// // palito1.classList.add("palitos");
-// // palito2.classList.add("palitos");
-// // palito3.classList.add("palitos");
-
-// let disco1 = document.createElement("div");
-// let disco2 = document.createElement("div");
-// let disco3 = document.createElement("div");
-// let disco4 = document.createElement("div");
-// let disco5 = document.createElement("div");
-
-// torrecita1.classList.add("torre");
-// disco1.classList.add("disco1");
-// disco2.classList.add("disco2");
-// disco3.classList.add("disco3");
-// disco4.classList.add("disco4");
-// disco5.classList.add("disco5");
-
-// torrecita1.prepend(palito1, disco1, disco2, disco3, disco4)
-// body[0].prepend(torrecita1, torrecita2, torrecita3);
-// // body[0].prepend(torrecita2, torrecita3);
